@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    background: linear-gradient(#13b270, rgb(65, 66, 159));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER*/
+
+
+header .navbar-brand{
+    color: #1eb649;
+    font-family:Impact;
+    font-size: 400%;
+    text-decoration: none;
+}
+header a{
+    text-decoration: none;
+}
+
+
+
+
+/*INICIO*/
+
+.inicio{
+    width: 90%; 
+    margin: 20px auto;
+    justify-content: center;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows:auto;
+   
+}
+  
+.inicio .titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+}
+.imag .imagen-inicio{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    grid-template-columns:auto;
+}
+#sub-title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.texto{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c2ba1c;
+    font-size: 1.rem;
+}
+.juegos .juegos-descripcion{
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction:wrap;
+}
+.informacion2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c2ba1c;
+    font-size: 1.rem;
+}
+
+/*MI CUENTA*/
+
+.registro{
+    box-sizing: border-box;
+    width: 450px;
+    background: #168fb8;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    font-family:'Franklin Gothic Medium';
+    color: white;
+    box-shadow: 7px 15px 30px #000000; 
+}
+@media (max-width:450px){
+    .registro{
+        width:100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+.registro h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.datos{
+    width: 95%;
+    background: #1b4a8c;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    border:2px solid #000000;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+    color: white;
+}
+
+.registro p{
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.registro a{
+    color: white;
+    text-decoration: none;
+}
+
+.registro a:hover{
+    color: white;
+    text-decoration: underline;    
+}
+
+.boton{
+  width: 100%;
+  background: #058b2b;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 15px;
+}
+
+
+/*CONTACTO*/
+
+.contac{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background: none;
+    margin-top: 10px;
+   padding: 10px;
+}
+
+p.text{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+}
+
+section{
+    box-sizing: border-box;
+    width: 350px;
+    background: #0c946d;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    font-family:'Franklin Gothic Medium';
+    color: white;
+    box-shadow: 7px 15px 30px #8d2121;
+}
+
+section h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gill Sans';
+    font-size: 25px;
+}
+
+p.nombre{
+    text-align: center;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium';
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+.info{
+    width: 90%;
+   text-align: center;
+   padding: 5px;
+   color: #6207ff;
+   font-family:inherit;
+   font-size: 15px;
+}
+
+input.bot{
+    width: 275px;
+    padding: 11px;
+    margin-top: 15px;
+    border-radius: 7px;
+    border: 2px solid #c80822;
+    background: #b02927;
+    font-family:'Franklin Gothic Medium';
+    font-size: 15px;
+    color: #f7f7f7;
+   
+}
+select{
+    width: 275px;
+    text-align: center;
+    padding: 5px;
+    color: #6207ff;
+    font-family:inherit;
+    font-size: 17px;
+}
+    
+/*PRODUCTOS*/
+
+.product{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    display: grid;
+    grid-template-rows: auto;  
+}
+.product .catalogo{
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    background: #002ee8;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+   
+}
+@media (max-width: 1000px){
+    .product .catalogo{
+        display: flex;
+      flex-wrap: wrap;
+    }
+}
+
+.img{
+    padding: 10px;
+}
+@media (max-width: 450px){
+    .img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+.product-title{
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #f7f7f7;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+}
+
+.bot button{
+    background: #058b2b;
+    padding: 10px;
+    border: 2px solid rgb(32, 15, 15);
+    border-radius: 7px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+
+/*SOBRE NOSOTROS*/
+
+.nostros{
+    display: grid;
+    grid-template-columns: auto;
+    min-width: 500px;
+}
+.acerca-nosotros{
+    width: 100%;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    padding: 10px;
+    margin: 10px;
+    
+}
+.nos{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+@media (max-width:450px){
+    .nosotros-imagen{
+        width: 300px;
+        height: 250px;
+    }
+
+}
+
+.nos p{
+    width: 100%;
+    font-size: 20px;
+    color: #e8c100;
+    font-family: 'Trebuchet MS';
+}
+
+.conocenos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conocenos-contacto{
+    margin: 15px;
+    text-align: center;
+    color: azure;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.conocenos-contacto-boton{
+    background: #058b2b;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 17px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px #002ee8;
+}
+
+.conocenos-contacto-boton a{
+    text-decoration: none;
+    color: white;
+}
+
+.conocenos-contacto-boton a:hover{
+    color: #002ee8;
+}
+
+/* FOOTER*/
+
+div p a{
+    text-decoration: none;
+    color: #ffffff;
+ }
